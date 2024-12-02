@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Setter Demo</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f3f4f6, #ffffff);
+      color: #333;
+      text-align: center;
+    }
+
+    /* Header Section */
+    header {
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header h2 {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+
+    /* Main Content Section */
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .instructions {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .widget-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer Section */
+    footer {
+      padding: 10px;
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 0.9em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Appointment Setter Demo</h1>
+    <h2>Click the Widget in the Bottom Right Corner</h2>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <p class="instructions">This chatbot will help you schedule, reschedule, or cancel appointments quickly and easily. Try it now!</p>
+
+    <!-- Widget Container -->
+    <div class="widget-container">
+      <!-- Voiceflow Chatbot Embed -->
+      <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '674e04f2f72311c2894484a3' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    &copy; 2024 Appointment Setter Demo | <a href="mailto:contact@example.com">Contact Us</a>
+  </footer>
+</body>
+</html>
